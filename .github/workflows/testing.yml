@@ -29,3 +29,6 @@ jobs:
             - name: Test with pytest
               run: |
                   pytest
+            - name: echo ENV
+              run: |
+                  echo ${{secrets.API_KEY}}
