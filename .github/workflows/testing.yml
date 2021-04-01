@@ -31,4 +31,4 @@ jobs:
                   pytest
             - name: echo ENV
               run: |
-                  echo ${{secrets.API_KEY}}
+                  echo $'${{secrets.API_KEY}}'
