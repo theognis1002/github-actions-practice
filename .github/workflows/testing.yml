@@ -30,6 +30,6 @@ jobs:
             - name: Test with pytest
               run: |
                   pytest
-            - name: echo ENV
+            - name: print ENV
               run: |
-                  echo $'${{secrets.API_KEY}}'
+                  python src/test.py
